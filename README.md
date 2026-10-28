@@ -21,7 +21,17 @@ one_piece_wiki/
 ├── pages/
 │   ├── bounties.html       # Bounty timeline & Chart.js graph
 │   ├── characters.html     # Character roster & Wanted posters
-│   └── arcs.html           # Story sagas & episode statistics
+│   ├── arcs.html           # Story sagas & episode statistics
+│   ├── luffy.html          # Monkey D. Luffy profile
+│   ├── zoro.html           # Roronoa Zoro profile
+│   ├── nami.html           # Nami profile
+│   ├── usopp.html          # Usopp profile
+│   ├── sanji.html          # Vinsmoke Sanji profile
+│   ├── chopper.html        # Tony Tony Chopper profile
+│   ├── robin.html          # Nico Robin profile
+│   ├── franky.html         # Franky profile
+│   ├── brook.html          # Brook profile
+│   └── jinbe.html          # Jinbe profile
 ├── assets/
 │   ├── css/
 │   │   ├── style.css       # Global layout & design tokens
