@@ -35,9 +35,4 @@ one_piece_wiki/
 └── README.md
 ```
 
----
 
-## How to Run
-
-1. Open `index.html` directly in any modern web browser, or
-2. Right-click `index.html` and select **"Open with Live Server"** in VS Code.
