@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="faceTone" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FED7AA" />
+      <stop offset="100%" stop-color="#FDBA74" />
+    </radialGradient>
+    <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular background -->
+  <circle cx="50" cy="50" r="48" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- Straw Hat Crown Behind Head -->
+  <path d="M26 36 C26 18, 74 18, 74 36 Z" fill="url(#hatGrad)" stroke="#CA8A04" stroke-width="2"/>
+  <!-- Red Ribbon on Hat -->
+  <path d="M27 34 C38 31, 62 31, 73 34 L73 38 C62 35, 38 35, 27 38 Z" fill="#DC2626"/>
+  <!-- Hat Brim -->
+  <ellipse cx="50" cy="38" rx="42" ry="9" fill="url(#hatGrad)" stroke="#CA8A04" stroke-width="2"/>
+
+  <!-- Luffy Hair -->
+  <path d="M30 40 Q38 46 44 41 Q50 48 56 41 Q62 46 70 40 Q65 60 50 64 Q35 60 30 40 Z" fill="#18181B"/>
+
+  <!-- Face -->
+  <path d="M34 46 Q50 42 66 46 Q64 68 50 74 Q36 68 34 46 Z" fill="url(#faceTone)"/>
+
+  <!-- Left eye & scar -->
+  <circle cx="43" cy="54" r="2.5" fill="#18181B"/>
+  <path d="M40 59 L46 59 M43 57 L43 61" stroke="#DC2626" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Right eye -->
+  <circle cx="57" cy="54" r="2.5" fill="#18181B"/>
+
+  <!-- Iconic Broad Grin -->
+  <path d="M40 64 Q50 73 60 64 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="1.5"/>
+  <path d="M45 66.5 L45 69 M50 67 L50 70 M55 66.5 L55 69" stroke="#E4E4E7" stroke-width="1"/>
+
+  <!-- Red Vest Collar -->
+  <path d="M32 82 Q50 76 68 82 L76 96 Q50 98 24 96 Z" fill="#DC2626"/>
+  <!-- Chest Exposure -->
+  <polygon points="42,80 50,89 58,80" fill="url(#faceTone)"/>
+</svg>

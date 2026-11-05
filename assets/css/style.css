@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #262626;
+    background-color: #f7f7f7;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('../img/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc2626;
+}
+
+header {
+    background-color: white;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #dbdbdb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-center {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-center li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.nav-center li a:hover,
+.nav-center li a.active {
+    color: #262626;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.hero-box {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.center-logo {
+    max-width: 320px;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 5px auto 18px auto;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #efefef;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #262626;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.subtext {
+    font-size: 12px;
+    color: #888888;
+}
+
+.quote-box {
+    border-left: 3px solid #262626;
+    background-color: #fafafa;
+    padding: 10px 15px;
+    margin: 15px 0 5px 0;
+    font-style: italic;
+    color: #333333;
+    text-align: left;
+}
+
+.quote-box small {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-size: 12px;
+    color: #777777;
+}
+
+.metadata-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.metadata-item {
+    flex: 1 1 calc(25% - 12px);
+    min-width: 160px;
+    border-left: 2px solid #dbdbdb;
+    padding-left: 10px;
+}
+
+.metadata-label {
+    display: block;
+    font-size: 11px;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.metadata-value {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.crew-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.crew-card {
+    flex: 1 1 calc(20% - 10px);
+    min-width: 130px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: border-color 0.15s ease;
+}
+
+.crew-card:hover {
+    border-color: #262626;
+}
+
+.crew-img-wrap {
+    width: 100%;
+    height: 150px;
+    background-color: #efefef;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+
+.crew-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.crew-info {
+    padding: 8px 6px 10px 6px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.crew-role {
+    font-size: 10px;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.crew-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 4px;
+}
+
+.crew-bounty {
+    font-size: 11px;
+    font-weight: bold;
+    color: #dc2626;
+    font-family: monospace;
+    margin-bottom: 6px;
+}
+
+.crew-link {
+    font-size: 11px;
+    font-weight: bold;
+    color: #262626;
+    border-top: 1px solid #efefef;
+    padding-top: 5px;
+    display: block;
+}
+
+.crew-card:hover .crew-link {
+    color: #dc2626;
+}
+
+.act-card {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+}
+
+.act-card:last-child {
+    margin-bottom: 0;
+}
+
+.act-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 5px;
+}
+
+.act-title {
+    font-size: 14.5px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.act-period {
+    font-size: 12px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.act-keypoints {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 8px;
+}
+
+.act-keypoints strong {
+    color: #262626;
+}
+
+.systems-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.system-item {
+    flex: 1 1 calc(50% - 12px);
+    min-width: 240px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+    border-top: 1px solid #dbdbdb;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #777777;
+    margin-top: auto;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: #777777;
+    font-size: 12px;
+}
+
+footer ul li a:hover {
+    color: #dc2626;
+}
+
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .nav-center {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .metadata-item {
+        flex: 1 1 100%;
+    }
+
+    .crew-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .system-item {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}

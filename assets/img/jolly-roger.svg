@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Straw Hat Yellow Gradient -->
+    <linearGradient id="strawYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <!-- Ribbon Red -->
+    <linearGradient id="ribbonRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+  </defs>
+
+  <!-- ================= Crossbones ================= -->
+  <g stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
+    <!-- Diagonal Bone 1: Top-Left to Bottom-Right -->
+    <path d="M22 18 C18 14 12 18 15 23 C10 25 12 32 17 31 L98 94 C103 93 105 100 100 102 C103 107 97 111 93 107 L19 25 Z" />
+    <!-- Diagonal Bone 2: Top-Right to Bottom-Left -->
+    <path d="M98 18 C102 14 108 18 105 23 C110 25 108 32 103 31 L22 94 C17 93 15 100 20 102 C17 107 23 111 27 107 L101 25 Z" />
+  </g>
+
+  <!-- ================= Skull Base ================= -->
+  <g stroke="#18181B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main Skull Dome -->
+    <path d="M38 52 C38 35, 82 35, 82 52 C82 66, 75 74, 71 77 L71 85 C71 87, 49 87, 49 85 L49 77 C45 74, 38 66, 38 52 Z" fill="#FFFFFF" />
+
+    <!-- Eye Sockets -->
+    <circle cx="50" cy="58" r="6" fill="#18181B" stroke="none" />
+    <circle cx="70" cy="58" r="6" fill="#18181B" stroke="none" />
+
+    <!-- Nose Cavity -->
+    <path d="M58 66 L60 63 L62 66 Z" fill="#18181B" stroke="none" />
+
+    <!-- Grinning Teeth -->
+    <path d="M50 78 C56 81, 64 81, 70 78" fill="none" stroke="#18181B" stroke-width="2" />
+    <line x1="55" y1="76" x2="55" y2="83" stroke="#18181B" stroke-width="1.8" />
+    <line x1="60" y1="76" x2="60" y2="83" stroke="#18181B" stroke-width="1.8" />
+    <line x1="65" y1="76" x2="65" y2="83" stroke="#18181B" stroke-width="1.8" />
+  </g>
+
+  <!-- ================= Straw Hat ================= -->
+  <g>
+    <!-- Hat Crown -->
+    <path d="M42 36 C42 19, 78 19, 78 36 Z" fill="url(#strawYellow)" stroke="#B45309" stroke-width="2" />
+    <!-- Red Ribbon -->
+    <path d="M42.5 33 C52 30, 68 30, 77.5 33 L78 37 C68 34, 52 34, 42 37 Z" fill="url(#ribbonRed)" stroke="#991B1B" stroke-width="0.8" />
+    <!-- Hat Brim -->
+    <ellipse cx="60" cy="38" rx="36" ry="8" fill="url(#strawYellow)" stroke="#B45309" stroke-width="2" />
+  </g>
+</svg>
