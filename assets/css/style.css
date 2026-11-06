@@ -55,7 +55,10 @@ header {
     color: #555555;
 }
 
-.nav-center li a:hover,
+.nav-center li a:hover {
+    color: #262626;
+}
+
 .nav-center li a.active {
     color: #262626;
 }
@@ -78,7 +81,11 @@ main {
     padding: 20px;
 }
 
-.hero-box,
+.hero-box {
+    text-align: center;
+    padding: 25px 20px;
+}
+
 .banner-box {
     text-align: center;
     padding: 25px 20px;
@@ -143,7 +150,16 @@ p:last-child {
     color: #888888;
 }
 
-.quote-box,
+.quote-box {
+    border-left: 3px solid #262626;
+    background-color: #fafafa;
+    padding: 10px 15px;
+    margin: 15px 0 5px 0;
+    font-style: italic;
+    color: #333333;
+    text-align: left;
+}
+
 .quote-placeholder {
     border-left: 3px solid #262626;
     background-color: #fafafa;
@@ -154,7 +170,14 @@ p:last-child {
     text-align: left;
 }
 
-.quote-box small,
+.quote-box small {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-size: 12px;
+    color: #777777;
+}
+
 .quote-placeholder small {
     display: block;
     margin-top: 5px;
@@ -215,7 +238,11 @@ p:last-child {
     margin-top: 10px;
 }
 
-.ships-grid .crew-card,
+.ships-grid .crew-card {
+    flex: 0 1 calc(20% - 10px);
+    max-width: calc(20% - 8px);
+}
+
 .ships-grid .crew-box {
     flex: 0 1 calc(20% - 10px);
     max-width: calc(20% - 8px);
@@ -225,7 +252,20 @@ p:last-child {
     color: #0284c7;
 }
 
-.crew-card,
+.crew-card {
+    flex: 1 1 calc(20% - 10px);
+    min-width: 130px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: border-color 0.15s ease;
+    padding: 0;
+}
+
 .crew-box {
     flex: 1 1 calc(20% - 10px);
     min-width: 130px;
@@ -240,7 +280,10 @@ p:last-child {
     padding: 0;
 }
 
-.crew-card:hover,
+.crew-card:hover {
+    border-color: #262626;
+}
+
 .crew-box:hover {
     border-color: #262626;
 }
@@ -300,13 +343,30 @@ p:last-child {
     display: block;
 }
 
-.crew-card:hover .crew-link,
+.crew-card:hover .crew-link {
+    color: #dc2626;
+}
+
 .crew-box:hover .crew-link {
     color: #dc2626;
 }
 
-.act-card,
-.post-box,
+.act-card {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+}
+
+.post-box {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+}
+
 .act-box {
     border: 1px solid #dbdbdb;
     border-radius: 4px;
@@ -315,8 +375,14 @@ p:last-child {
     background-color: white;
 }
 
-.act-card:last-child,
-.post-box:last-child,
+.act-card:last-child {
+    margin-bottom: 0;
+}
+
+.post-box:last-child {
+    margin-bottom: 0;
+}
+
 .act-box:last-child {
     margin-bottom: 0;
 }
@@ -352,7 +418,13 @@ p:last-child {
     color: #262626;
 }
 
-.systems-grid,
+.systems-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
 .features-row {
     display: flex;
     flex-wrap: wrap;
@@ -360,7 +432,15 @@ p:last-child {
     margin-top: 10px;
 }
 
-.system-item,
+.system-item {
+    flex: 1 1 calc(50% - 12px);
+    min-width: 240px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: white;
+}
+
 .feature-box {
     flex: 1 1 calc(50% - 12px);
     min-width: 240px;
@@ -413,15 +493,30 @@ footer ul li a:hover {
         flex: 1 1 100%;
     }
 
-    .crew-card,
-    .crew-box,
-    .ships-grid .crew-card,
+    .crew-card {
+        flex: 1 1 calc(50% - 10px);
+        max-width: none;
+    }
+
+    .crew-box {
+        flex: 1 1 calc(50% - 10px);
+        max-width: none;
+    }
+
+    .ships-grid .crew-card {
+        flex: 1 1 calc(50% - 10px);
+        max-width: none;
+    }
+
     .ships-grid .crew-box {
         flex: 1 1 calc(50% - 10px);
         max-width: none;
     }
 
-    .system-item,
+    .system-item {
+        flex: 1 1 100%;
+    }
+
     .feature-box {
         flex: 1 1 100%;
     }
