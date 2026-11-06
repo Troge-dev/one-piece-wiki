@@ -78,7 +78,8 @@ main {
     padding: 20px;
 }
 
-.hero-box {
+.hero-box,
+.banner-box {
     text-align: center;
     padding: 25px 20px;
 }
@@ -142,7 +143,8 @@ p:last-child {
     color: #888888;
 }
 
-.quote-box {
+.quote-box,
+.quote-placeholder {
     border-left: 3px solid #262626;
     background-color: #fafafa;
     padding: 10px 15px;
@@ -152,12 +154,24 @@ p:last-child {
     text-align: left;
 }
 
-.quote-box small {
+.quote-box small,
+.quote-placeholder small {
     display: block;
     margin-top: 5px;
     font-style: normal;
     font-size: 12px;
     color: #777777;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 7px;
+    font-size: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    background-color: #efefef;
+    font-weight: bold;
+    color: #555555;
 }
 
 .metadata-grid {
@@ -201,7 +215,8 @@ p:last-child {
     margin-top: 10px;
 }
 
-.ships-grid .crew-card {
+.ships-grid .crew-card,
+.ships-grid .crew-box {
     flex: 0 1 calc(20% - 10px);
     max-width: calc(20% - 8px);
 }
@@ -210,7 +225,8 @@ p:last-child {
     color: #0284c7;
 }
 
-.crew-card {
+.crew-card,
+.crew-box {
     flex: 1 1 calc(20% - 10px);
     min-width: 130px;
     border: 1px solid #dbdbdb;
@@ -221,9 +237,11 @@ p:last-child {
     flex-direction: column;
     text-align: center;
     transition: border-color 0.15s ease;
+    padding: 0;
 }
 
-.crew-card:hover {
+.crew-card:hover,
+.crew-box:hover {
     border-color: #262626;
 }
 
@@ -282,11 +300,14 @@ p:last-child {
     display: block;
 }
 
-.crew-card:hover .crew-link {
+.crew-card:hover .crew-link,
+.crew-box:hover .crew-link {
     color: #dc2626;
 }
 
-.act-card {
+.act-card,
+.post-box,
+.act-box {
     border: 1px solid #dbdbdb;
     border-radius: 4px;
     padding: 15px;
@@ -294,7 +315,9 @@ p:last-child {
     background-color: white;
 }
 
-.act-card:last-child {
+.act-card:last-child,
+.post-box:last-child,
+.act-box:last-child {
     margin-bottom: 0;
 }
 
@@ -329,14 +352,16 @@ p:last-child {
     color: #262626;
 }
 
-.systems-grid {
+.systems-grid,
+.features-row {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 10px;
 }
 
-.system-item {
+.system-item,
+.feature-box {
     flex: 1 1 calc(50% - 12px);
     min-width: 240px;
     border: 1px solid #dbdbdb;
@@ -389,12 +414,15 @@ footer ul li a:hover {
     }
 
     .crew-card,
-    .ships-grid .crew-card {
+    .crew-box,
+    .ships-grid .crew-card,
+    .ships-grid .crew-box {
         flex: 1 1 calc(50% - 10px);
         max-width: none;
     }
 
-    .system-item {
+    .system-item,
+    .feature-box {
         flex: 1 1 100%;
     }
 
