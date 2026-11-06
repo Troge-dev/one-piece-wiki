@@ -197,6 +197,19 @@ p:last-child {
     margin-top: 10px;
 }
 
+.ships-grid {
+    margin-top: 10px;
+}
+
+.ships-grid .crew-card {
+    flex: 0 1 calc(20% - 10px);
+    max-width: calc(20% - 8px);
+}
+
+.ship-type {
+    color: #0284c7;
+}
+
 .crew-card {
     flex: 1 1 calc(20% - 10px);
     min-width: 130px;
@@ -375,8 +388,10 @@ footer ul li a:hover {
         flex: 1 1 100%;
     }
 
-    .crew-card {
+    .crew-card,
+    .ships-grid .crew-card {
         flex: 1 1 calc(50% - 10px);
+        max-width: none;
     }
 
     .system-item {
