@@ -1,0 +1,239 @@
+body {
+	background-image: url("886473704_2310798553033030_6860456965194022026_n.jpg");
+	background-repeat:repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#column {
+	display: flex;
+	flex-direction: column;
+}
+
+#row {
+	display: flex;
+}
+
+#box1 {
+	display: flex;
+	background-color:#FFF9E6;
+	width: 1100px;
+	height:100px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #654321;
+}
+
+#onepiece_logo {
+	display: flex;
+	background-image: url("../img/one_piece.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: 200px 100px;
+	width: 200px;
+	height: 100px;
+	margin: 5px;
+	
+}
+
+#header_space {
+	display: flex;
+	width: 600px;
+	height: 100px;
+	margin: 5px;
+}
+
+#fansite_txt {
+	display: flex;
+	width: 240px;
+	height: 100px;
+	margin: 5px;
+	color:#654321;
+	font-family: 'Times New Roman', serif;
+	align-items:center;
+	justify-content:flex-start;
+	font-size:60px;
+	font-weight:bold;
+	
+}
+
+#name {
+	display: flex;
+	background-color:#FFF9E6;
+	width: 1100px;
+	height:120px;
+	padding-top: 3px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items: center;
+	justify-content: center;
+	color:#654321; font-family: 'Times New Roman', serif; font-size:80px;
+}
+
+#name_s {
+	display: flex;
+	background-color:#FFF9E6;
+	width: 1100px;
+	height:50px;
+	padding-bottom: 3px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 2px solid #654321;
+	color:#654321; font-family: 'Times New Roman', serif; font-size:20px;
+}
+
+
+#eye_box {
+	display: flex;
+	background-color:#FFF9E6;
+	width: 1100px;
+	height:300px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #654321;
+}
+
+#eye_pic {
+	display: flex;
+	background-image: url("../img/brook_eye.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-position-y:80%;
+	width: 1000px;
+	height: 300px;
+	margin: 5px;
+	
+
+}
+
+#box2 {
+	display: flex;
+	background-color:#FFF9E6;
+	width: 1100px;
+	height:1300px;
+	padding-bottom: 10px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #654321;
+}
+
+#box_left {
+	display: flex;
+	width: 360px;
+	height:1300px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	align-items: flex-start;
+	justify-content: center;
+	margin:5px;
+	border-right: 4px solid #654321;
+
+}
+
+#box_mid {
+	display: flex;
+	width: 360px;
+	height:1200px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	align-items: flex-start;
+	justify-content: center;
+	margin:5px;
+
+}
+
+#box_right {
+	display: flex;
+	width: 360px;
+	height:1200px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	align-items: flex-start;
+	justify-content: center;
+	margin:5px;
+	border-left: 4px solid #654321;
+
+}
+
+#wanted {
+	display: flex;
+	background-image: url("../img/brook_wantedpic.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: 295px;
+	width: 320px;
+	height: 420px;
+	margin: 5px;
+	
+}
+
+#info_txt {
+	display: flex;
+	width: 320px;
+	height: 50px;
+	margin: 5px;
+	justify-content:center;
+	border-top: 3px solid #654321;
+	border-bottom: 3px solid #654321;
+	padding-top:1px;
+	padding-bottom:10px;
+	color:#654321;
+	font-family: 'Times New Roman', serif;
+	font-size:23px;
+	font-weight:bold;
+}
+
+#info {
+	display: flex;
+	width: 320px;
+	margin: 5px;
+	justify-content:flex-start;
+	color:#654321;
+	font-family: 'Times New Roman', serif;
+	font-size:20px;
+	
+}
+
+#pic1 {
+	display: flex;
+	background-image: url("../img/brook_power.jpg");
+	background-position:center;
+	width: 320px;
+	height: 420px;
+	margin: 5px;
+	background-repeat:no-repeat;
+
+	
+}
+
+#pic2 {
+	display: flex;
+	background-image: url("../img/brook_human.jpg");
+	background-position:center;
+	width: 320px;
+	height: 420px;
+	margin: 5px;
+	background-repeat:no-repeat;
+	
+}
+
+
+
+
+
